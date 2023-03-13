@@ -1,0 +1,39 @@
+#us-map {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+ 
+}
+
+path:hover,
+circle:hover {
+  stroke: #227da7 !important;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  fill: #028fcc !important;
+  cursor: pointer;
+}
+
+#path67 {
+  fill: none !important;
+  stroke: #2cb3f0 !important;
+  cursor: default;
+}
+
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #212121;
+  color: #ffffff;
+  border: 0px solid #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: arial;
+}
