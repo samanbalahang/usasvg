@@ -23,4 +23,4 @@ Or download this project with the help of software git bash.
 <p>
 Open the index.html file in the webbrowser software
 </p>
-<img src="image/usasvg.jpg">
+<img src="https://github.com/samanbalahang/usasvg/blob/main/assets/image/usasvg.jpg">
