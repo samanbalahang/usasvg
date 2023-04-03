@@ -1,6 +1,7 @@
 $(function () {
     var ids;
     $('select.select2').select2();
+    // نام شهر ها به انگلیسی 
     const obj = {
         states: {
             "ME": {
@@ -378,6 +379,7 @@ $(function () {
     $("#lang").on("change", function (e) {
         changelang()
     });
+// نام شهر ها به فارسی
     const faobj = {
         states: {
             "ME": {
@@ -726,11 +728,13 @@ $(function () {
         }
     }
 
+    // تغییر زبان
     function changelang(id = "") {
         console.log(id);
         if ($("#lang").val() == "2" && $("#lang").val() == 2) {
             $("html").attr("lang", "fa-IR")
             $("#langform label").text("زبان خود را انتخاب کنید");
+            $("#styleform label").text("استایل جدول خود را انتخاب کنید!");
             $("#thetable thead tr th:first-child").text("ردیف");
             $("#thetable thead tr th:nth-child(2)").text("اختصار");
             $("#thetable thead tr th:nth-child(3)").text("اسم ایالت");
@@ -764,6 +768,7 @@ $(function () {
         } else {
             $("html").attr("lang", "EN");
             $("#langform label").text("Select Your Language");
+            $("#styleform label").text("choose style");
             $("#thetable thead tr th:first-child").text("id");
             $("#thetable thead tr th:nth-child(2)").text("state name");
             $("#thetable thead tr th:nth-child(3)").text("details");
@@ -779,6 +784,7 @@ $(function () {
 
         }
     }
+
     // انتخاب نوع جدول
     $("#tablestyle").on("change", function (e) {
         let tablestyle = $(this).val();
